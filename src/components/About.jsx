@@ -8,9 +8,9 @@ const About = () => {
   return (
     <section
       id="about"
-      className="bg-gray-100 dark:bg-[#1e2533] transition-colors duration-500 px-4 min-h-screen py-[80px] md:py-[160px]"
+      className="bg-gray-100 dark:bg-[#1e2533] transition-colors duration-500 px-4 min-h-screen py-[80px] md:py-[152px]"
     >
-      <div className="w-full max-w-[1200px] mx-auto flex flex-col-reverse md:flex-row items-center justify-center gap-y-[40px] md:gap-x-[130px] px-4">
+      <div className="w-full max-w-[1200px] mx-auto flex flex-col-reverse md:flex-row items-center justify-center gap-y-[40px] md:gap-x-[85px] px-4">
         
         {/* Text Content with animation */}
         <motion.div
@@ -20,16 +20,16 @@ const About = () => {
           className="max-w-2xl text-center md:text-left space-y-6"
         >
           <div className="space-y-2">
-            <h2 className="text-2xl md:text-5xl font-bold text-[#1e293b] dark:text-white mb-5">
+            <h2 className="text-2xl md:text-[2.6rem] font-bold text-[#1e293b] dark:text-white md:mb-6">
               Welcome!
             </h2>
-            <h2 className="text-2xl md:text-5xl font-bold whitespace-nowrap">
+            <h2 className="text-2xl md:text-[2.5rem] font-bold whitespace-nowrap">
               <span className="text-[#1e293b] dark:text-white">I’m </span>
               <span className="text-[#3b82f6] dark:text-[#60a5fa]">Mohit Ramchandani</span>
             </h2>
           </div>
 
-          <h3 className="text-lg md:text-4xl mt-2 text-[#475569] dark:text-gray-300 font-medium">
+          <h3 className="text-xl md:text-[2.2rem] mt-6 text-[#475569] dark:text-gray-300 font-medium">
             <Typewriter
               options={{
                 strings: [
@@ -45,8 +45,8 @@ const About = () => {
             />
           </h3>
 
-          <p className="text-[#475569] dark:text-gray-400 text-base md:text-[1.32rem] leading-relaxed">
-          I am a passionate, creative developer who is always open to possibilities. I enjoy learning new technologies and solving real world problems. Looking forward to connect and collaborate with each other.
+          <p className="text-[#475569] dark:text-gray-400 text-base md:text-[1.1rem] leading-relaxed">
+          I am a passionate, creative developer who is always open to possibilities. I enjoy learning new technologies, solving real world problems and working in a team together. Looking forward to connect and collaborate with each other.
           </p>
 
           {/* Resume and Socials */}
@@ -96,7 +96,7 @@ const About = () => {
           transition={{ duration: 0.6, delay: 0.3 }}
           className="flex justify-center"
         >
-          <div className="w-[180px] h-[180px] md:w-[200px] md:h-[200px] lg:w-[345px] lg:h-[345px] rounded-full overflow-hidden border-[px] border-[#3b82f6] shadow-2xl transform transition duration-700 ease-in-out hover:scale-105 hover:shadow-[0_0_30px_rgba(59,130,246,0.5)] -mt-[0px] md:-mt-[38px]">
+          <div className="w-[180px] h-[180px] md:w-[200px] md:h-[200px] lg:w-[290px] lg:h-[290px] rounded-full overflow-hidden border-[px] border-[#3b82f6] shadow-2xl transform transition duration-700 ease-in-out hover:scale-105 hover:shadow-[0_0_30px_rgba(59,130,246,0.5)] -mt-[0px] md:-mt-[50px]">
             <img
               src={MohitImg3}
               alt="Mohit Ramchandani"
