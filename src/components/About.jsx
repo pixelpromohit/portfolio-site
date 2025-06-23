@@ -1,25 +1,26 @@
 import React from 'react';
 import Typewriter from 'typewriter-effect';
 import { Github, Linkedin, Mail } from 'lucide-react';
-import { motion } from 'framer-motion'; // ✅ Import framer-motion
+import { motion } from 'framer-motion';
 import MohitImg3 from '../assets/MohitImg3.png';
 
 const About = () => {
   return (
     <section
       id="about"
-      className="bg-gray-100 dark:bg-[#1e2533] transition-colors duration-500 px-4 min-h-screen py-[80px] md:py-[152px]"
+      className="bg-gray-100 dark:bg-[#1e2533] transition-colors duration-500 px-4 min-h-screen py-[80px] md:py-[140px]"
     >
       <div className="w-full max-w-[1200px] mx-auto flex flex-col-reverse md:flex-row items-center justify-center gap-y-[40px] md:gap-x-[85px] px-4">
         
-        {/* Text Content with animation */}
+        {/* Text Content */}
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.1 }}
-          className="max-w-2xl text-center md:text-left space-y-6"
+          className="max-w-2xl text-center md:text-left"
         >
-          <div className="space-y-2">
+          {/* Heading */}
+          <div className="mb-7">
             <h2 className="text-2xl md:text-[2.6rem] font-bold text-[#1e293b] dark:text-white md:mb-6">
               Welcome!
             </h2>
@@ -29,25 +30,31 @@ const About = () => {
             </h2>
           </div>
 
-          <h3 className="text-xl md:text-[2.2rem] mt-6 text-[#475569] dark:text-gray-300 font-medium">
-            <Typewriter
-              options={{
-                strings: [
-                  'Full Stack Developer',
-                  'Programmer',
-                  'Software Developer',
-                ],
-                autoStart: true,
-                loop: true,
-                delay: 50,
-                deleteSpeed: 30,
-              }}
-            />
-          </h3>
+          {/* Typewriter */}
+          <div className="mb-5">
+            <h3 className="text-xl md:text-[1.7rem] text-[#475569] dark:text-gray-300 font-medium">
+              <Typewriter
+                options={{
+                  strings: [
+                    'Full Stack Developer',
+                    'Programmer',
+                    'Software Developer',
+                  ],
+                  autoStart: true,
+                  loop: true,
+                  delay: 50,
+                  deleteSpeed: 30,
+                }}
+              />
+            </h3>
+          </div>
 
-          <p className="text-[#475569] dark:text-gray-400 text-base md:text-[1.1rem] leading-relaxed">
-          I am a passionate, creative developer who is always open to possibilities. I enjoy learning new technologies, solving real world problems and working in a team together. Looking forward to connect and collaborate with each other.
-          </p>
+          {/* Paragraph */}
+          <div className="md:mb-10">
+            <p className="text-[#475569] dark:text-gray-400 text-base md:text-[1.12rem] leading-relaxed">
+              I am a passionate, creative developer who is always open to possibilities. I enjoy learning new technologies, solving real world problems and working in a team together. Looking forward to connect and collaborate with each other :)
+            </p>
+          </div>
 
           {/* Resume and Socials */}
           <div className="flex flex-col sm:flex-row sm:items-center sm:gap-5 gap-4 pt-2">
@@ -89,14 +96,14 @@ const About = () => {
           </div>
         </motion.div>
 
-        {/* Profile Image with animation */}
+        {/* Profile Image */}
         <motion.div
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.6, delay: 0.3 }}
           className="flex justify-center"
         >
-          <div className="w-[180px] h-[180px] md:w-[200px] md:h-[200px] lg:w-[290px] lg:h-[290px] rounded-full overflow-hidden border-[px] border-[#3b82f6] shadow-2xl transform transition duration-700 ease-in-out hover:scale-105 hover:shadow-[0_0_30px_rgba(59,130,246,0.5)] -mt-[0px] md:-mt-[50px]">
+          <div className="w-[180px] h-[180px] md:w-[200px] md:h-[200px] lg:w-[302px] lg:h-[302px] rounded-full overflow-hidden border-[px] border-[#3b82f6] shadow-2xl transform transition duration-700 ease-in-out hover:scale-105 hover:shadow-[0_0_30px_rgba(59,130,246,0.5)] -mt-[0px] md:-mt-[40px]">
             <img
               src={MohitImg3}
               alt="Mohit Ramchandani"
