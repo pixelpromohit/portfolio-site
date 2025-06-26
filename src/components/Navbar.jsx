@@ -3,8 +3,8 @@ import { Moon, Sun, User, BadgeCheck, Briefcase, Code2, Mail } from "lucide-reac
 
 const Navbar = ({ darkMode, setDarkMode }) => {
   const navLinks = [
-    { name: "About", path: "/", icon: User },
-    { name: "Skills", path: "/", icon: BadgeCheck },
+    { name: "About", path: "#about", icon: User },
+    { name: "Skills", path: "#skills", icon: BadgeCheck },
     { name: "Experience", path: "/", icon: Briefcase },
     { name: "Projects", path: "/", icon: Code2 },
     { name: "Contact", path: "/", icon: Mail },
@@ -26,7 +26,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
       className={`fixed top-0 left-0 w-full z-50 px-4 md:px-8 lg:px-12 xl:px-20 transition-all duration-500 flex items-center justify-between ${
         isScrolled
           ? "bg-white dark:bg-[#1e2533] shadow-md backdrop-blur-md py-3 md:py-4"
-          : "bg-gray-200 dark:bg-[#3469c6] py-4 md:py-6 border-gray-200 dark:border-gray-800"
+          : "bg-gray-200 dark:bg-[#3a62a8] py-4 md:py-6 border-gray-200 dark:border-gray-800"
       }`}
     >
       {/* Logo */}

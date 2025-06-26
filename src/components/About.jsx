@@ -8,7 +8,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="bg-gray-100 dark:bg-[#1e2533] transition-colors duration-500 px-4 min-h-screen py-[80px] md:py-[147px]"
+      className="bg-gray-100 dark:bg-[#1e2533] transition-colors duration-500 px-4 pt-[90px] pb-[60px] md:pt-[147px] md:pb-[115px]"
     >
       <div className="w-full max-w-[1200px] mx-auto flex flex-col-reverse md:flex-row items-center justify-center gap-y-[40px] md:gap-x-[85px] px-4">
         
@@ -19,7 +19,6 @@ const About = () => {
           transition={{ duration: 0.6, delay: 0.1 }}
           className="max-w-2xl text-center md:text-left"
         >
-          {/* Heading */}
           <div className="mb-7">
             <h2 className="text-2xl md:text-[2.6rem] font-bold text-[#1e293b] dark:text-white md:mb-6">
               Welcome!
@@ -30,7 +29,6 @@ const About = () => {
             </h2>
           </div>
 
-          {/* Typewriter */}
           <div className="mb-5">
             <h3 className="text-xl md:text-[1.7rem] text-[#475569] dark:text-gray-300 font-medium">
               <Typewriter
@@ -49,14 +47,12 @@ const About = () => {
             </h3>
           </div>
 
-          {/* Paragraph */}
           <div className="md:mb-10">
             <p className="text-[#475569] dark:text-gray-400 text-base md:text-[1.11rem] leading-relaxed">
               I am a passionate, creative developer who is always open to possibilities. I enjoy learning new technologies, solving real world problems and working in a team together. Looking forward to connect and collaborate with each other.
             </p>
           </div>
 
-          {/* Resume and Socials */}
           <div className="flex flex-col sm:flex-row sm:items-center sm:gap-5 gap-4 pt-2">
             <a
               href="/resume.pdf"
@@ -103,7 +99,7 @@ const About = () => {
           transition={{ duration: 0.6, delay: 0.3 }}
           className="flex justify-center"
         >
-          <div className="w-[180px] h-[180px] md:w-[200px] md:h-[200px] lg:w-[300px] lg:h-[300px] rounded-full overflow-hidden border-[px] border-[#3b82f6] shadow-2xl transform transition duration-700 ease-in-out hover:scale-105 hover:shadow-[0_0_30px_rgba(59,130,246,0.5)] -mt-[0px] md:-mt-[35px]">
+          <div className="w-[180px] h-[180px] md:w-[200px] md:h-[200px] lg:w-[300px] lg:h-[300px] rounded-full overflow-hidden border border-transparent dark:border-transparent shadow-2xl transform transition duration-700 ease-in-out hover:scale-105 hover:shadow-[0_0_30px_rgba(59,130,246,0.5)] -mt-[0px] md:-mt-[36px]">
             <img
               src={MohitImg3}
               alt="Mohit Ramchandani"
